@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1em;
+  background: #48abe3;
+  font-family: 'Pacifico', cursive;
+}
+
+center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+center.row {
+  flex-direction: row;
+}
+
+/* Animations */
+@-webkit-keyframes backToFront {
+  from {
+    z-index: 0;
+  }
+  to {
+    z-index: 1;
+  }
+}
+@keyframes backToFront {
+  from {
+    z-index: 0;
+  }
+  to {
+    z-index: 1;
+  }
+}
+@-webkit-keyframes fadeInOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeInOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: translate(-13vw, -1vw);
+            transform: translate(-13vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(23vw, 0vw);
+            transform: translate(23vw, 0vw);
+  }
+}
+@keyframes orbit {
+  from {
+    -webkit-transform: translate(-13vw, -1vw);
+            transform: translate(-13vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(23vw, 0vw);
+            transform: translate(23vw, 0vw);
+  }
+}
+/* Shapes */
+.globe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.globe:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: solid 1em rgba(0, 0, 0, 0.2);
+  border-radius: inherit;
+  bottom: -.1em;
+  right: -.5em;
+}
+.globe:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.moon {
+  width: 7vw;
+  margin-left: -5em;
+  background: #eea;
+  -webkit-animation: orbit 3s ease-in-out alternate infinite;
+          animation: orbit 3s ease-in-out alternate infinite;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  z-index: 0;
+}
+.moon:before {
+  bottom: -.5em;
+  right: -.7em;
+}
+
+.shadow {
+  display: flex;
+  position: absolute;
+  margin-left: -4em;
+  margin-top: .6em;
+  -webkit-animation: orbit 3s ease-in-out alternate infinite;
+          animation: orbit 3s ease-in-out alternate infinite;
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+.shadow:after {
+  content: '';
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-animation: fadeInOut 3s ease-in-out alternate infinite;
+          animation: fadeInOut 3s ease-in-out alternate infinite;
+}
+
+.earth {
+  width: 27vw;
+  background-image: url("P.svg");
+  -webkit-animation: backToFront 3s ease-in-out alternate infinite;
+          animation: backToFront 3s ease-in-out alternate infinite;
+  animation-steps: 2;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 4vw;
+}
+
+hr {
+	margin: 0;
+}
+
+.Web {
+	position: absolute;
+	left: 15%;
+	transform: translate(-50%, 0);
+	top: 40vh; 
+}
+
+.Gam {
+	position: absolute;
+	left: 25%;
+	transform: translate(-50%, 0);
+	top: 20vh; 
+}
+
+.Abo {
+	position: absolute;
+	left: 85%;
+	transform: translate(-50%, 0);
+	top: 40vh; 
+}
+
+.Pro {
+	position: absolute;
+	left: 75%;
+	transform: translate(-50%, 0);
+	top: 60vh; 
+}
+
+.AboText {
+  position: absolute;
+  left: 20%;
+  transform: translate(-50%,0);
+  top: 25vh;
+  width: 20vw;
+  font-size: 1.5vw;
+}
+
+#Games {
+	display: none;
+}
+
+#Home {
+}
+
+#Websites {
+	display: none;
+}
+
+#Projects {
+  display: none;
+}
+
+#About {
+  display: none;
+}
+
+.Profile {
+  width: 10vw;
+}
+
+.profpic {
+  position: absolute;
+  left: 75%;
+  transform: translate(-50%, 0);
+  top: 17vh; 
+}
