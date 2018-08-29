@@ -204,6 +204,18 @@ hr {
   display: none;
 }
 
+#PcGames {
+  display: none;
+}
+
+#IOSGames {
+  display: none;
+}
+
+#AndroidGames {
+  display: none;
+}
+
 .Profile {
   width: 10vw;
 }
