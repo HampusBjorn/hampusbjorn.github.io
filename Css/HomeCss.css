@@ -406,14 +406,28 @@ hr {
 .Gam {
   position: absolute;
   left: 25%;
-  top: 40%;
+  top: 45%;
   transform: translate(-50%, -50%);
 }
 
 .Pro {
   position: absolute;
   left: 75%;
-  top: 58%;
+  top: 63%;
+  transform: translate(-50%, -50%);
+}
+
+.Abo {
+  position: absolute;
+  left: 85%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.Web {
+  position: absolute;
+  left: 15%;
+  top: 53%;
   transform: translate(-50%, -50%);
 }
 }
