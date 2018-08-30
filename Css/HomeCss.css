@@ -399,6 +399,37 @@ hr {
   top: 50%;
   transform: translate(-50%, -50%); 
 }
+
+@media only screen and (max-height: 500px) {
+  .Web {
+  position: absolute;
+  left: 15%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.Gam {
+  position: absolute;
+  left: 25%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+}
+
+.Abo {
+  position: absolute;
+  left: 85%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+}
+
+.Pro {
+  position: absolute;
+  left: 75%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+}
+
 }
 
 @media only screen and (max-width: 400px) {
