@@ -55,6 +55,7 @@ function About() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "none";
+	document.getElementById("showWith").innerHTML = "screen size " + screen.width;
 }
 
 function PcGames() {
