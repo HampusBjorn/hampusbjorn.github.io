@@ -70,6 +70,124 @@ center.row {
             transform: translate(23vw, 0vw);
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(-11vw, -1vw);
+            transform: translate(-11vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(26vw, 0vw);
+            transform: translate(26vw, 0vw);
+  }
+}
+}
+
+@media only screen and (max-width: 1000px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(-11vw, -1vw);
+            transform: translate(-11vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(30vw, 0vw);
+            transform: translate(30vw, 0vw);
+  }
+}
+}
+
+@media only screen and (max-width: 700px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(-6vw, -1vw);
+            transform: translate(-6vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(33vw, 0vw);
+            transform: translate(33vw, 0vw);
+  }
+}
+}
+
+@media only screen and (max-width: 600px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(-6vw, -1vw);
+            transform: translate(-6vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(35vw, 0vw);
+            transform: translate(35vw, 0vw);
+  }
+}
+}
+
+@media only screen and (max-width: 500px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(-5vw, -1vw);
+            transform: translate(-5vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(38vw, 0vw);
+            transform: translate(38vw, 0vw);
+  }
+}
+}
+
+@media only screen and (max-width: 450px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(-2vw, -1vw);
+            transform: translate(-2vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(38vw, 0vw);
+            transform: translate(38vw, 0vw);
+  }
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(1vw, -1vw);
+            transform: translate(1vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(40vw, 0vw);
+            transform: translate(40vw, 0vw);
+  }
+}
+}
+
+@media only screen and (max-width: 354px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(2vw, -1vw);
+            transform: translate(2vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(41vw, 0vw);
+            transform: translate(41vw, 0vw);
+  }
+}
+}
+
+@media only screen and (max-width: 340px) {
+  @keyframes orbit {
+  from {
+    -webkit-transform: translate(6vw, -1vw);
+            transform: translate(6vw, -1vw);
+  }
+  to {
+    -webkit-transform: translate(45vw, 0vw);
+            transform: translate(45vw, 0vw);
+  }
+}
+}
 /* Shapes */
 .globe {
   display: flex;
@@ -151,36 +269,36 @@ hr {
 .Web {
 	position: absolute;
 	left: 15%;
-	transform: translate(-50%, 0);
-	top: 40vh; 
+  top: 45%;
+	transform: translate(-50%, -50%);
 }
 
 .Gam {
 	position: absolute;
 	left: 25%;
-	transform: translate(-50%, 0);
-	top: 20vh; 
+  top: 25%;
+	transform: translate(-50%, -50%);
 }
 
 .Abo {
 	position: absolute;
 	left: 85%;
-	transform: translate(-50%, 0);
-	top: 40vh; 
+  top: 47%;
+	transform: translate(-50%, -50%);
 }
 
 .Pro {
 	position: absolute;
 	left: 75%;
-	transform: translate(-50%, 0);
-	top: 60vh; 
+  top: 67%;
+	transform: translate(-50%, -50%);
 }
 
 .AboText {
   position: absolute;
-  left: 20%;
-  transform: translate(-50%,0);
-  top: 25vh;
+  left: 18%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 20vw;
   font-size: 1.5vw;
 }
@@ -223,6 +341,79 @@ hr {
 .profpic {
   position: absolute;
   left: 75%;
-  transform: translate(-50%, 0);
-  top: 17vh; 
+  top: 40%;
+  transform: translate(-50%, -50%); 
+}
+
+@media only screen and (max-width: 1000px) {
+  .profpic {
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
+}
+
+@media only screen and (max-width: 600px) {
+.Web {
+  position: absolute;
+  left: 15%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.Gam {
+  position: absolute;
+  left: 25%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.Abo {
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Pro {
+  position: absolute;
+  left: 75%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.AboText {
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  font-size: 1.5vw;
+}
+
+
+.profpic {
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
+}
+
+@media only screen and (max-width: 400px) {
+
+.Gam {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.Pro {
+  position: absolute;
+  left: 75%;
+  top: 58%;
+  transform: translate(-50%, -50%);
+}
 }
