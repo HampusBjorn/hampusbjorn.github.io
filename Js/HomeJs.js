@@ -1,4 +1,26 @@
-var load = document.getElementById("Webtext");
+var everything
+
+function update() {
+everything = document.getElementById("Webtext").innerHTML;
+}
+
+window.onbeforeunload = function(){
+				localStorage.setItem("everything", everything);
+			}
+
+window.onload = function() {
+		if ("everything" in localStorage) {
+				everything = localStorage.getItem("everything");
+                console.log("h")
+				}
+
+				else {
+				localStorage.setItem("everything", everything);
+                    console.log("d")
+			}
+			document.getElementById("Webtext").innerHTML = everything;
+	update();
+}
 
 function Games() {
 	document.getElementById("Games").style.display = "block";
@@ -9,6 +31,7 @@ function Games() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "none";
+	update();
 
 }
 
@@ -21,6 +44,7 @@ function Home() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "none";
+	update();
 }
 
 function Websites() {
@@ -32,6 +56,7 @@ function Websites() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "none";
+	update();
 
 }
 
@@ -44,6 +69,7 @@ function Projects() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "none";
+	update();
 }
 
 function About() {
@@ -55,6 +81,7 @@ function About() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "none";
+	update();
 }
 
 function PcGames() {
@@ -66,6 +93,7 @@ function PcGames() {
 	document.getElementById("PcGames").style.display = "block"
 	document.getElementById("AndroidGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "none";
+	update();
 }
 
 function IOSGames() {
@@ -77,6 +105,7 @@ function IOSGames() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("IOSGames").style.display = "block";
 	document.getElementById("AndroidGames").style.display = "none";
+	update();
 }
 
 function AndroidGames() {
@@ -88,6 +117,7 @@ function AndroidGames() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "block";
 	document.getElementById("IOSGames").style.display = "none";
+	update();
 }
 
 function exefunction(){
