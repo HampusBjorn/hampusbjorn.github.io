@@ -260,6 +260,7 @@ a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 4vw;
+  opacity: 0;
 }
 
 hr {

@@ -3,23 +3,42 @@ var everything
 function update() {
 everything = document.getElementById("Webtext").innerHTML;
 }
-
-window.onbeforeunload = function(){
-				localStorage.setItem("everything", everything);
-			}
-
 window.onload = function() {
-		if ("everything" in localStorage) {
-				everything = localStorage.getItem("everything");
-                console.log("h")
-				}
+	var linkopacity = document.getElementById('Webtext').getElementsByTagName('a');
+$(document).ready(function () {
+    if(window.location.href.indexOf("#About") > -1) {
+       About();
+    }
+    else if(window.location.href.indexOf("#Games") > -1) {
+       Games();
+    }
+    else if(window.location.href.indexOf("#Home") > -1) {
+       Home();
+    }
+    else if(window.location.href.indexOf("#Websites") > -1) {
+       Websites();
+    }
+    else if(window.location.href.indexOf("#Projects") > -1) {
+       Projects();
+    }
+    else if(window.location.href.indexOf("#IOSGames") > -1) {
+       IOSGames();
+    }
+    else if(window.location.href.indexOf("#AndroidGames") > -1) {
+       AndroidGames();
+    }
+    else if(window.location.href.indexOf("#PcGames") > -1) {
+       PcGames();
+    }
 
-				else {
-				localStorage.setItem("everything", everything);
-                    console.log("d")
-			}
-			document.getElementById("Webtext").innerHTML = everything;
-	update();
+});
+var Interval = setInterval(Textin, 10);
+function Textin() {
+	for (var i = 0; i < linkopacity.length; i++) {
+    				linkopacity[i].style.opacity = '1';
+					}
+					clearInterval(Interval);
+}
 }
 
 function Games() {
