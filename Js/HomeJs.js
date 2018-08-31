@@ -1,4 +1,4 @@
-var load = document.getElementById("Web text");
+var load = document.getElementById("Webtext");
 
 function Games() {
 	document.getElementById("Games").style.display = "block";
@@ -88,4 +88,27 @@ function AndroidGames() {
 	document.getElementById("PcGames").style.display = "none";
 	document.getElementById("AndroidGames").style.display = "block";
 	document.getElementById("IOSGames").style.display = "none";
+}
+
+function exefunction(){
+                var night = document.getElementById("box").checked;
+                var link = document.getElementById('Webtext').getElementsByTagName('a');
+                console.log(night);
+                if (night) {
+                	document.getElementById("earth").style.background = "url(PP.svg)";
+                	document.getElementById("body").style.background = "#282828";
+                	for (var i = 0; i < link.length; i++) {
+    				link[i].style.color = '#696969';
+					}
+					document.getElementById("moon").style.background = "#a6a882"
+                }
+                else if (!night) {
+                	document.getElementById("earth").style.background = "url(P.svg)";
+                	document.getElementById("body").style.background = "#48abe3";
+                	for (var i = 0; i < link.length; i++) {
+    				link[i].style.color = '#fff';
+					}
+					document.getElementById("moon").style.background = "#eea"
+
+                }
 }

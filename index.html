@@ -10,9 +10,9 @@
 	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
-<body>
+<body id="body">
 
-<div id="Web text">
+<div id="Webtext">
 
 <section id="Home">
 <a href="#Websites" class="Web" onclick="Websites()">Websites<hr></a>
@@ -61,12 +61,16 @@
 </div>
 
 	<center class="row">
-  <div class="globe earth">
+  <div class="globe earth" id="earth">
     <div class="shadow"></div>
   </div>
-  <div class="globe moon"></div>
+  <div class="globe moon" id="moon"></div>
 </center>
 
+<label class="switch">
+  <input type="checkbox" id="box" onclick="exefunction()">
+  <span class="slider round"></span>
+</label>
 
 </body>
 </html>
