@@ -5,7 +5,7 @@ function update() {
 everything = document.getElementById("Webtext").innerHTML;
 }
 
-var Interval = setInterval(function() {var time = new Date(); console.log(time)}, 10);
+var Interval = setInterval(function() {var time = new Date(); console.log(time)}, 5000);
 
 window.onload = function() {
 	var linkopacity = document.getElementById('Webtext').getElementsByTagName('a');
