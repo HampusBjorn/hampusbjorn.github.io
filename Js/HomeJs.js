@@ -45,7 +45,7 @@ function Textin() {
 }
 	if (d.getHours() >= 15) {
 		exefunction();
-		console.log(d);
+		console.log(d.getHours());
 	}
 }
 
