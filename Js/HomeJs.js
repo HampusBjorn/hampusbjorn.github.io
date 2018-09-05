@@ -44,6 +44,7 @@ function Textin() {
 					clearInterval(Interval);
 }
 	if (d.getHours() >= 15) {
+		document.getElementById("box").checked = true;
 		exefunction();
 		console.log(d.getHours());
 	}
@@ -158,7 +159,6 @@ function exefunction(){
     				link[i].style.color = '#696969';
 					}
 					document.getElementById("moon").style.background = "#a6a882"
-			document.getElementById("box").checked = true;
                 }
                 else if (!night) {
                 	document.getElementById("earth").style.background = "url(P.svg)";
