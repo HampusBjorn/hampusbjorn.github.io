@@ -6,8 +6,7 @@ everything = document.getElementById("Webtext").innerHTML;
 window.onload = function() {
 	var d = new Date();
 	if (d.getHours() >= 15) {
-		exefunction();
-		document.getElementById("box").checked = true;	
+		exefunction();	
 	}
 	var linkopacity = document.getElementById('Webtext').getElementsByTagName('a');
 $(document).ready(function () {
@@ -155,6 +154,7 @@ function exefunction(){
     				link[i].style.color = '#696969';
 					}
 					document.getElementById("moon").style.background = "#a6a882"
+			document.getElementById("box").checked = true;
                 }
                 else if (!night) {
                 	document.getElementById("earth").style.background = "url(P.svg)";
