@@ -7,8 +7,7 @@ window.onload = function() {
 	var d = new Date();
 	if (d.getHours() >= 15) {
 		exefunction();
-		document.getElementById("box").checked = true;
-		
+		document.getElementById("box").checked = true;	
 	}
 	var linkopacity = document.getElementById('Webtext').getElementsByTagName('a');
 $(document).ready(function () {
