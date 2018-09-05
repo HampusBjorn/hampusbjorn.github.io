@@ -43,7 +43,7 @@ function Textin() {
 					}
 					clearInterval(Interval);
 }
-	if (d.getHours() >= 15) {
+	if (d.getHours() >= 20 || d.getHours() <= 6) {
 		document.getElementById("box").checked = true;
 		exefunction();
 		console.log(d.getHours());
