@@ -4,6 +4,12 @@ function update() {
 everything = document.getElementById("Webtext").innerHTML;
 }
 window.onload = function() {
+	var d = new Date();
+	if (d.getHours() >= 15) {
+		exefunction();
+		document.getElementById("box").checked = true;
+		
+	}
 	var linkopacity = document.getElementById('Webtext').getElementsByTagName('a');
 $(document).ready(function () {
     if(window.location.href.indexOf("#About") > -1) {
