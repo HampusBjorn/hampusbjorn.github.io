@@ -1,13 +1,11 @@
 var everything
+var d = new Date();
 
 function update() {
 everything = document.getElementById("Webtext").innerHTML;
 }
+
 window.onload = function() {
-	var d = new Date();
-	if (d.getHours() >= 15) {
-		exefunction();	
-	}
 	var linkopacity = document.getElementById('Webtext').getElementsByTagName('a');
 $(document).ready(function () {
     if(window.location.href.indexOf("#About") > -1) {
@@ -43,6 +41,9 @@ function Textin() {
 					}
 					clearInterval(Interval);
 }
+	if (d.getHours() >= 15) {
+		exefunction();	
+	}
 }
 
 function Games() {
