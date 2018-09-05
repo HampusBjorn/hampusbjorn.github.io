@@ -5,6 +5,8 @@ function update() {
 everything = document.getElementById("Webtext").innerHTML;
 }
 
+var Interval = setInterval(function() {var time = new Date(); console.log(time)}, 10);
+
 window.onload = function() {
 	var linkopacity = document.getElementById('Webtext').getElementsByTagName('a');
 $(document).ready(function () {
@@ -42,7 +44,8 @@ function Textin() {
 					clearInterval(Interval);
 }
 	if (d.getHours() >= 15) {
-		exefunction();	
+		exefunction();
+		console.log(d);
 	}
 }
 
